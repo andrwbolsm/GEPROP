@@ -1,11 +1,7 @@
 ## About
  
 This project covers the design of the data acquisition (DAQ) electronics board and its associated software for a rocket engine static fire test stand. During a test, the system collects **temperature**, **pressure**, and **thrust** data in real time and transmits it wirelessly over long range to a graphical user interface (GUI) for remote monitoring.
- 
-The long-distance transmission capability is a key safety feature, keeping operators at a safe distance from the test stand during engine firing while still providing live performance data.
- 
----
- 
+
 ## System Overview
  
 ```
