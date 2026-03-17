@@ -1,2 +1,35 @@
-# GEPROP
-Projeto de placa eletrônica da bancada de testes de motores-foguete do Grupo de Estudos em Propulsão e Perfomance, da Universidade Federal de Santa Maria, UFSM, de forma a extrair dados de temperatura, pressão e empuxo durante o ensaio, transmitindo estes dados à longo distância para uma interface gráfica. Esta última característica garante segurança e intuitividade na análise de desempenho do motor-foguete durante o teste.
+## About
+ 
+This project covers the design of the data acquisition (DAQ) electronics board and its associated software for a rocket engine static fire test stand. During a test, the system collects **temperature**, **pressure**, and **thrust** data in real time and transmits it wirelessly over long range to a graphical user interface (GUI) for remote monitoring.
+ 
+The long-distance transmission capability is a key safety feature, keeping operators at a safe distance from the test stand during engine firing while still providing live performance data.
+ 
+---
+ 
+## System Overview
+ 
+```
+[ Test Stand ]                              [ Operator Station ]
+  Sensors (T, P, F)
+       │
+  DAQ Board                ── RF Link ──►   GUI (live plots)
+  (signal conditioning,
+   ADC, microcontroller)
+```
+ 
+| Measured quantity | Sensor type |
+|---|---|
+| Temperature | Thermocouple / RTD |
+| Pressure | Pressure transducer |
+| Thrust (force) | Load cell |
+ 
+---
+ 
+## Features
+ 
+- Multi-channel sensor acquisition (temperature, pressure, thrust)
+- Long-range wireless data transmission
+- Real-time graphical interface for test monitoring
+- Designed for safe stand-off operation during live engine tests
+ 
+---
